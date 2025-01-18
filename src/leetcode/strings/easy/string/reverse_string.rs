@@ -24,7 +24,9 @@ impl Solution {
     }
 
     pub fn reverse_string_by_std(s: &mut Vec<char>) {
-        // reverse() 는 in-place 로 동작하므로 현재 문제에 대해 완벽하게 유효함.
+        /// reverse() 는 in-place 로 동작하므로 현재 문제에 대해 완벽하게 유효함.
+        /// Python 에서는 reverse() 메서드가 새로운 리스트를 만들어서 복사하는 방식을 이용한다.
+        /// Python 에서는 list[:] = list[::-1] 을 사용하여 문제를 해결 할 수 있지만, 이 또한 O(n) 의 공간 복잡도를 가지기 때문에 제약조건을 만족하지 못한다.
         s.reverse();
     }
 

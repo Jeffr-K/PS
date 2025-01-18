@@ -1,1 +1,1 @@
-pub mod easy;
+mod strings;
