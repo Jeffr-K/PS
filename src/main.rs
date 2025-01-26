@@ -1,4 +1,7 @@
 mod leetcode;
+mod dsal;
+mod rust;
+mod programmers;
 
 fn main() {
     let greet = "Hello, world!";

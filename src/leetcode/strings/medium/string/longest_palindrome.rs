@@ -5,6 +5,9 @@ impl Solution {
         if s.is_empty() {
             return "".to_string();
         }
+        if s.len() == 1 {
+            return s;
+        }
 
         let chars: Vec<char> = s.chars().collect();
         let mut start = 0;
